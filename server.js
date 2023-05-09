@@ -61,4 +61,27 @@ app.post('/api/notes', (req, res) => {
   }); 
 })
 
-// app.delete('/', (req, res) => res.send("Navigate to /send or /routes"));
+app.delete('/api/notes/:id', (req,res) => {
+
+  fs.readFile('./db/db.json', 'utf8', (err, notes) => {
+   
+    if (err) {
+      return res.status(500).json({err});
+    }
+
+    let data = JSON.parse(notes);
+
+    data = data.filter(object => {
+      return object.id !== req.params.id;
+    });
+
+    fs.writeFile('./db/db.json', JSON.stringify(data, null, 2), (err) => {
+
+      if (err) {
+        return res.status(500).json({err});
+      }
+     
+      res.json(JSON.parse(notes));
+    });
+  });
+})
