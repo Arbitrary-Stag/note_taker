@@ -22,6 +22,8 @@ If you would like to learn more about this license, please click the link.
 
 ## Credits
 This code was written by William Weaver, using the assistance of class materials, google search engine, and various youtube tutorials.
+The starter code, which contained all of the front end code, was cloned from the following repo, and was provided by the bootcamp.
+https://github.com/coding-boot-camp/miniature-eureka
 
 ## Deployment Link
 
