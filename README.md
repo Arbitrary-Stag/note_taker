@@ -26,5 +26,7 @@ The starter code, which contained all of the front end code, was cloned from the
 https://github.com/coding-boot-camp/miniature-eureka
 
 ## Deployment Link
+https://note-taker-william-weaver.herokuapp.com/
 
 ## Screenshot
+![note_taker](https://github.com/Arbitrary-Stag/note_taker/assets/120620818/20df6d7f-f4cf-4a32-b25c-b01f7eeed172)
